@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+}
+/*headerNavbar css*/
+.navbar {
+  /*border:1px solid black;*/
+  display: flex;
+  justify-content: space-between;
+  /*align-items: center;*/
+}
+
+.brandName {
+  margin: 0.5rem;
+  /*border:1px solid black;*/
+}
+
+/*.navbarLinks{
+  border:1px solid black;
+ 
+}*/
+
+.navbarLinks ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://i.ibb.co/sPrVFgs/navbg-img.png');
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 2% 100%);
+
+}
+
+.navbarLinks ul li {
+  list-style: none;
+  padding: 0.5rem;
+  color: #fff;
+  font-size: 0.8rem;
+  border-left: 1px solid #fff;
+}
+
+.navbarLinks ul li:hover {
+  color: #ffc107;
+}
+
+#icon-bar {
+  position: absolute;
+  left: 10rem;
+  top: 2rem;
+  display: none;
+  flex-direction: column;
+
+}
+
+#darkmode-img {
+  width: 2vw;
+}
+
+.belowNavbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*border:1px solid black;*/
+}
+
+.belowNavbar ul {
+  display: flex;
+  background-image: none !important;
+}
+
+.belowNavbar ul li {
+  list-style: none;
+  color: #000;
+  font-weight: bold;
+
+}
+
+.belowNavbar ul li img {
+  width: 4vw;
+}
+
+#text_skip {
+  margin-top: 3%;
+}
+#text_skip:hover{
+  color:#000 !important;
+}
+
+/*home navbar with dropdown css*/
+#website-header2{
+  background-color: #003c84 !important;
+  font-size:0.8rem;
+  font-family: Helvetica !important;
+  padding: 0.1rem 1rem !important;
+
+}
+.dropdown-menu {
+  background-color: #004E8F !important;
+}
+
+.dropdown-menu li {
+  font-size: 12px;
+
+}
+
+.dropdown-menu li a {
+  color: #fff;
+}
+
+.dropdown-divider {
+  height: 1px;
+  background-color: #fff;
+  border: none;
+}
+
+/*marquee tag*/
+div.marque-content {
+  font-family: Helvetica;
+  letter-spacing: .2px;
+  background-color: #000;
+  color: #FEB10A;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.owl-item {
+  width: 128.906px;
+  margin-right: 10px;
+  background: #fff;
+  height: 500px;
+}
+
+div.owl-item img {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media(max-width:600px) {
+  #icon-bar {
+    display: flex;
+    
+  }
+ .brandName{
+    margin-left: -68%;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .navbarLinks {
+    display: none;
+    width: 100%;
+  }
+
+  .navbarLinks ul {
+    flex-direction: column;
+    width: 100%;
+
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+  }
+
+  .navbarLinks ul li {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    /* to remove much space btw the elements*/
+  }
+
+  .navbarLinks ul li:hover {
+    background-color: #ffc107;
+    color: #000;
+    transition: 0.5em;
+  }
+
+  .navbarLinks.active {
+    display: flex;
+  }
+
+  #darkmode-img {
+    margin-left: 4vw;
+    float: right;
+    width: 4vw;
+  }
+
+  .belowNavbar ul li img {
+    width: 10vw;
+  }
+
+  
+
+}
+
